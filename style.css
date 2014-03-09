@@ -34,15 +34,14 @@ background-color:#CECFCB;
 	width:350px;
 	height: 300px;
 	float: left;
-	background: red;
 }
 
 #closeup_middle
 {
 	width: 300px;
-	height: 300px;
+	height: 275px;
 	float: left;
-	background: blue;
+	padding-top: 25px;
 }
 
 #closeup_left
@@ -50,17 +49,7 @@ background-color:#CECFCB;
 	width: 350px;
 	height: 300px;
 	float: left;
-	background: green;
 }
-#50-divider
-{
-	width: 100%;
-	height: 50px;
-	display: inline;
-}
-#25-divider
-{
-	width: 100%;
-	height: 25px;
-	display: inline;
+.padbot{
+	margin-bottom: 50px;
 }

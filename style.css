@@ -41,7 +41,6 @@ background-color:#CECFCB;
 	width: 300px;
 	height: 275px;
 	float: left;
-	padding-top: 25px;
 }
 
 #closeup_left
@@ -50,6 +49,52 @@ background-color:#CECFCB;
 	height: 300px;
 	float: left;
 }
+
+#nw
+{
+	width:350px;
+	height: 125px;
+	background-image:url("images/nw.png");
+	background-size:350px 125px;
+	background-repeat:no-repeat;
+}
+
+#sw
+{
+	width:350px;
+	height: 125px;
+	background-image:url("images/sw.png");
+	background-size:350px 125px;
+	background-repeat:no-repeat;
+}
+
+#ne
+{
+	width:350px;
+	height: 125px;
+	background-image:url("images/ne.png");
+	background-size:350px 125px;
+	background-repeat:no-repeat;
+}
+
+#se
+{
+	width:350px;
+	height: 125px;
+	background-image:url("images/se.png");
+	background-size:350px 125px;
+	background-repeat:no-repeat;
+}
 .padbot{
-	margin-bottom: 50px;
+	margin-bottom: 15px;
+}
+
+#greentext
+{
+font-family: 'Alegreya Sans', sans-serif;
+font-size: 70px;
+color: white;
+text-align: center;
+margin: 0px;
+padding-top: 20px;
 }

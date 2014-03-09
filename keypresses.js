@@ -15,7 +15,7 @@ $(document).ready(function(){
     
     
     
-    
+    // AUXXXXXXXXXXXXXXXXXXXXX
     function auxFunc() {
         $("#nwlabel").css("color", "red");
         $("#nelabel").css("color", "white");
@@ -81,6 +81,13 @@ $(document).ready(function(){
         else if (e.keyCode == 104) { 
             angle += 40;
             $("#dial").rotate(angle);
+        }
+    });
+    
+    // BACKKKKKKKKKKKKKKKKKKKKKKKKK
+    $(document).keypress(function(e){
+        if (e.keyCode == 119) {
+            audioFunc();
         }
     });
 });

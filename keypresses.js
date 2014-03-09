@@ -40,6 +40,7 @@ $(document).ready(function(){
         $("#swlabel").text("BT\xa0\xa0");
         $("#selabel").text("\xa0\xa0CONFIG");
         menuFunc();
+        $("#reverseDial").html("71");
     }
     function audioFunc() {
         angle = 0;
@@ -71,18 +72,22 @@ $(document).ready(function(){
     function menuFunc() {
         $(document).keypress(function(e){
         if (e.keyCode == 119) {
+            savedTemp = init;
             init = 15;
             audioFunc();
         }
         else if (e.keyCode == 99) {
+            savedTemp = init;
             init = 15;
             audioFunc();
         }
         else if (e.keyCode == 111) {
+            savedTemp = init;
             init = 15;
             audioFunc();
         }
         else if (e.keyCode == 109) {
+            savedTemp = init;
             init = 15;
             audioFunc();
         }
@@ -105,6 +110,8 @@ $(document).ready(function(){
     }
     
     var init = 65;
+    var savedTemp;
+    
     $("#reverseDial").html(init);
     menuFunc();
 

@@ -29,7 +29,26 @@ background-color:#CECFCB;
 {
 	text-align:center;
 }
-#closeup
+#closeup_right
 {
-	text-align:center;
+	width: 400px;
+	height: 450px;
+	float: left;
+	background: red;
+}
+
+#closeup_middle
+{
+	width: 200px;
+	height: 450px;
+	float: left;
+	background: blue;
+}
+
+#closeup_left
+{
+	width: 400px;
+	height: 450px;
+	float: left;
+	background: green;
 }

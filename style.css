@@ -56,9 +56,11 @@ background-color:#CECFCB;
 {
 	width: 100%;
 	height: 50px;
+	display: inline;
 }
 #25-divider
 {
 	width: 100%;
 	height: 25px;
+	display: inline;
 }

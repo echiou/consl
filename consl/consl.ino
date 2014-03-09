@@ -40,31 +40,31 @@ void loop() {
   buttonState5 = digitalRead(buttonPin5);
   potState = analogRead(potPin);
   if (potState >= tracker + 100) {
-    Serial.println("right");
+    Serial.print("g");
     tracker = potState;
   }
   else if (potState <= tracker - 100) {
-    Serial.println("left");
+    Serial.print("h");
     tracker = potState;
   }
   if (buttonState1 == HIGH) {
-    Serial.println("button1");
+    Serial.print("w");
     delay(250);
   }
   else if (buttonState2 == HIGH) {
-    Serial.println("button2");
+    Serial.print("c");
     delay(250);
   }
   else if (buttonState3 == HIGH) {
-    Serial.println("button3");
+    Serial.print("o");
     delay(250);
   }
   else if (buttonState4 == HIGH) {
-    Serial.println("button4");
+    Serial.print("m");
     delay(250);
   }
   else if (buttonState5 == HIGH) {
-    Serial.println("back");
+    Serial.print("b");
     delay(250);
   }
 }

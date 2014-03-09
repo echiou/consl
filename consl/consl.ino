@@ -15,7 +15,7 @@ int buttonState3 = 0;
 int buttonState4 = 0;
 int buttonState5 = 0;
 int potState = analogRead(potPin);
-int tracker = 0;
+int tracker = potState;
 
 // the setup routine runs once when you press reset:
 void setup() {                

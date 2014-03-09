@@ -14,7 +14,6 @@ int buttonState4 = 0;
 
 // the setup routine runs once when you press reset:
 void setup() {                
-  // initialize the digital pin as an output.
   pinMode(ledPin, OUTPUT);    
   pinMode(buttonPin1, INPUT); 
   pinMode(buttonPin2, INPUT); 

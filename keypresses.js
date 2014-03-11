@@ -136,33 +136,49 @@ $(document).ready(function() {
         }
     }
     function turnDialForward() {
-        angle += 40;
+        angle += 3.6;
         $("#dial").rotate(angle);
         $("#reverseDial").rotate(-angle);
         switch(dialType) {
             case "vol":
-                vol += 2;            
+                if (vol < 100) {
+                    vol += 1; 
+                }
                 break;
             case "aux":
-                aux += 2;
+                if (aux < 100) {
+                    aux += 1;
+                }
                 break;
             case "am":
-                am += 2;
+                if (am < 100) {
+                    am += 1;
+                }
                 break;
             case "fm":
-                fm += 2;
+                if (fm < 100) {
+                    fm += 1;
+                }
                 break;
             case "temp":
-                temp += 2;            
+                if (temp < 100) {
+                    temp += 1;  
+                }
                 break;
             case "air":
-                air += 2;
+                if (air < 100) {
+                    air += 1;
+                }
                 break;
             case "rdefrost":
-                rdefrost += 2;
+                if (rdefrost < 100) {
+                    rdefrost += 1;
+                }
                 break;
             case "fdefrost":
-                fdefrost += 2;
+                if (fdefrost < 100) {
+                    fdefrost += 1;
+                }
                 break; 
             default:
                 break;
@@ -170,33 +186,49 @@ $(document).ready(function() {
         checkDial();
     }
     function turnDialBackward() {
-        angle -= 40;
+        angle -= 3.6;
         $("#dial").rotate(angle);
         $("#reverseDial").rotate(-angle);
         switch(dialType) {
             case "vol":
-                vol -= 2;            
+                if (vol > 0) {
+                    vol -= 1;   
+                }
                 break;
             case "aux":
-                aux -= 2;
+                if (aux > 0) {
+                    aux -= 1;
+                }
                 break;
             case "am":
-                am -= 2;
+                if (am > 0) {
+                    am -= 1;
+                }
                 break;
             case "fm":
-                fm -= 2;
+                if (fm > 0) {
+                    fm -= 1;
+                }
                 break;
             case "temp":
-                temp -= 2;            
+                if (temp > 0) {
+                    temp -= 1; 
+                }
                 break;
             case "air":
-                air -= 2;
+                if (air > 0) {
+                    air -= 1;
+                }
                 break;
             case "rdefrost":
-                rdefrost -= 2;
+                if (rdefrost > 0) {
+                    rdefrost -= 1;
+                }
                 break;
             case "fdefrost":
-                fdefrost -= 2;
+                if (fdefrost > 0) {
+                    fdefrost -= 1;
+                }
                 break; 
             default:
                 break;
